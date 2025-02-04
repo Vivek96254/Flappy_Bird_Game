@@ -301,7 +301,7 @@ class Tube extends GameObject {
     public Tube(int x, int y) {
         super(x, y);
         if (proxyImage == null) { // If the image has not been loaded
-            proxyImage = new ProxyImage("TubeBody.png"); // Load the image
+            proxyImage = new ProxyImage("tube_body.png"); // Load the image
 
         }
         this.image = proxyImage.loadImage().getImage(); // Get the image
@@ -339,7 +339,7 @@ class Game extends JPanel implements ActionListener {
 
     public Game() {
 
-        proxyImage = new ProxyImage("background.jpg"); // Load the image
+        proxyImage = new ProxyImage("background.png"); // Load the image
         background = proxyImage.loadImage().getImage(); // Get the image
         setFocusable(true);
         setDoubleBuffered(false);
